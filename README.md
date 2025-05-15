@@ -6,13 +6,13 @@ Esta es una configuración personalizada para el teclado Corne (crkbd) que inclu
 
 ### Capas
 
-- **Base**: Capa principal para escritura
-- **Num**: Capa numérica
-- **Symb**: Capa de símbolos
-- **Nav**: Capa de navegación
-- **Adj**: Capa de ajustes
-- **Game**: Modo de juego (activa el ladrido de [Luna](https://github.com/HellSingCoder/qmk_firmware/blob/master/keyboards/sofle/keymaps/helltm/keymap.c))
-- **Game2**: Capa secundaria de juego
+- **Base**: Capa principal para escritura en español latinoamericano
+- **Num**: Capa numérica con distribución de teclado numérico
+- **Symb**: Capa de símbolos y caracteres especiales
+- **Nav**: Capa de navegación y control multimedia
+- **Adj**: Capa de ajustes (RGB y reinicio)
+- **Game**: Modo de juego optimizado con mascota Luna ladrando
+- **Game2**: Capa secundaria de juego con acceso a teclas de función
 
 ### Pantallas OLED
 
@@ -21,30 +21,32 @@ El teclado cuenta con dos pantallas OLED con diferentes funcionalidades:
 #### Pantalla Principal (Master)
 
 - Indicador de capa actual
-- Mascota virtual "[Luna](https://github.com/HellSingCoder/qmk_firmware/blob/master/keyboards/sofle/keymaps/helltm/keymap.c)" que reacciona a tu escritura:
-  - Se sienta cuando escribes lento
+- Mascota virtual "Luna" que reacciona a tu escritura:
+  - Se sienta cuando escribes lento (< 10 WPM)
   - Camina a velocidad media
-  - Corre cuando escribes rápido
+  - Corre cuando escribes rápido (> 40 WPM)
   - Ladra en modo de juego
   - Se escabulle con ALT
   - Salta con la barra espaciadora
 
 #### Pantalla Secundaria
 
-- Efecto "Matrix Rain" animado
-- Lluvia de caracteres al estilo Matrix (no se ve bien, va a ser modificado)
+- Efecto "Glitch" animado
+- Distorsión visual dinámica con restauración automática
 
-### Animaciones Especiales
+![Glitch Effect](./images/slave_art.png)
 
-- **[Luna](https://github.com/HellSingCoder/qmk_firmware/blob/master/keyboards/sofle/keymaps/helltm/keymap.c)**: Mascota virtual con múltiples animaciones
-  - Velocidad de caminata: < 10 WPM
-  - Velocidad de carrera: > 40 WPM
-  - Animaciones de salto y sigilo
-  - Modo ladrido en capa de juego
+### RGB Matrix
+
+- Control completo de iluminación RGB
+- Ajustes de brillo, saturación y efectos
+- Brillo máximo limitado a 150 para estabilidad
+- Reacción a pulsaciones de teclas
+- Desactivación en modo suspendido
 
 ## Timeout de Pantalla
 
-Las pantallas OLED se apagarán automáticamente después de un período de inactividad para ahorrar energía.
+Las pantallas OLED se apagarán automáticamente después de 60 segundos de inactividad para ahorrar energía.
 
 ## Personalización
 
@@ -54,4 +56,4 @@ Este keymap está diseñado para ser intuitivo y divertido, combinando funcional
 
 - Basado en el firmware QMK
 - Animaciones de [Luna](https://github.com/HellSingCoder/qmk_firmware/blob/master/keyboards/sofle/keymaps/helltm/keymap.c) por HellSingCoder
-- Efecto Matrix Rain personalizado
+- Efecto Glitch personalizado
